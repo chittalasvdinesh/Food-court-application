@@ -1,0 +1,73 @@
+.header3{
+    text-shadow: black 5px 15px 17px;
+    margin-bottom: 40px;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    color: red;
+}
+table{
+    background: white ;
+    border-radius: 10px;
+    padding: 20px;
+    border: black 2px solid;
+    box-shadow: black -0px 10px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    margin-left: 300px;
+    margin-right: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-container{
+    display: flex;
+    flex-direction: column;
+}
+
+marquee{
+    color: green;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 30px;
+}
+[type='submit']{
+    background: green;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 3px;
+    margin-top: 10px;
+}
+[type="reset"]{
+    background: red;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    padding: 3px;
+    margin-left: 10px;
+}
+
+input{
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.video{
+    margin: 10px;
+    text-decoration: underline;
+
+}
+
+iframe{
+    width: 400px;
+    height: 300px;
+}

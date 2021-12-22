@@ -1,0 +1,52 @@
+.item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon{
+    
+   margin:18px;
+   color: white;
+   height: 20px;
+   width: 20px;
+}
+
+.rating{
+    display: flex;
+    padding: 10px;
+    background: green;
+    border: 2px solid white;
+    border-radius: 15px;
+    height: 18px;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    font-size: 18px;
+    
+}
+
+.p1{
+    color: white;
+}
+
+img{
+    border-radius: 10px;
+}
+
+span{
+    margin-left: 10px;
+    text-decoration: line-through;
+}
+
+button{
+    height: 40px;
+    background-color: red;
+    color: white;
+}
+
+section{
+    display: flex;
+   
+    
+}
+

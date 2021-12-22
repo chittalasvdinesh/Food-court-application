@@ -1,0 +1,91 @@
+.banner-section{
+    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/foodmunch-banner-bg.png");
+    height:210px;
+    padding: 20px;
+    text-align: center;
+    font-family: "Roboto";
+
+    
+}
+
+
+.banner-heading{
+   color: white;
+ 
+  font-size: 45px;
+  font-weight: 300;
+  text-align: center;
+  align-items: center;
+  
+}
+
+.banner-cap{
+    color: #f5f7fa;
+  font-family: "Roboto";
+  font-size: 24px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.btn{
+    background-color: transparent;
+    color: yellow;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.wcu-p{
+    font-size: 20px;
+
+}
+
+.top-home{
+    padding: 10px;
+}
+
+.wcu-card{
+   
+        text-align: center;
+        background-color: white;
+        border: 2px solid #e5eaf4;
+        border-radius: 16px;
+        margin: 10px;
+        box-shadow: 10px 10px 5px grey;
+        transition: width 2s;
+}
+
+
+marquee{
+  font-size: 15px;
+  color: red;
+  margin: 10px;
+}
+
+
+article:hover {
+  height: 300px;
+}
+.section-home{
+    display: flex;
+    padding: 10px;
+
+}
+
+.wcu-card-image {
+    width: 87px;
+    height: 90px;
+    padding: 10px;
+
+  }
+  .wcu-card-title {
+    color: #323f4b;
+    font-family: "Roboto";
+    font-size: 22px;
+    font-weight: 500;
+  }
+  .wcu-card-description {
+    color: #7b8794;
+    font-family: "Roboto";
+    font-size: 16px;
+  }
