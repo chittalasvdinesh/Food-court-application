@@ -222,19 +222,17 @@ const foodItem= [
 
 
 
-function showItems(){
+function displayItems(){
     var biryani= document.getElementById('biryani');
     var vegetable=  document.getElementById('vegetable');
     var southIndian=  document.getElementById('south-indian');
 
-    /*filtering the items using category key in food Items array*/
+    
 
-    const biryaniSection= foodItem.filter((item)=>item.category=='biryani');
-    const vegetableSection= foodItem.filter((item)=>item.category=='vegetable');
-    const southIndianSection= foodItem.filter((item)=>item.category=='south indian');
-   
-    /*adding card items of specific section*/
-    biryaniSection.map(item=>{
+    const biryaniData= foodItem.filter((item)=>item.category=='biryani');
+    const vegetableData= foodItem.filter((item)=>item.category=='vegetable');
+    const southData= foodItem.filter((item)=>item.category=='south indian');
+    biryaniData.map(item=>{
         
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
@@ -270,14 +268,15 @@ function showItems(){
         itemCard.appendChild(img);
         itemCard.appendChild(itemName);
         itemCard.appendChild(itemPrice);
+
         biryani.appendChild(itemCard);
         
     })
 
-/*adding card items of specific section*/
 
 
-    vegetableSection.map(item=>{
+
+    vegetableData.map(item=>{
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
 
@@ -319,7 +318,7 @@ function showItems(){
     })
 
     
-    southIndianSection.map(item=>{
+    southData.map(item=>{
         var itemCard= document.createElement('div');
         itemCard.setAttribute('id','item-card')
 
@@ -359,11 +358,11 @@ function showItems(){
 
     })
 }
-showItems();
+displayItems();
 
 
 const vegData= [...new Map(foodItem.map(item=> [item['category'],item])).values()];
-
+console.log(vegData);
 
 function selectTaste(){
     var categoryList= document.getElementById('category-list');
@@ -415,12 +414,12 @@ function addToCart(){
     ' ' + cartData.length + ' Items';
     document.getElementById('m-cart-plus').innerText=
     ' ' + cartData.length;
-    totalBill();
-    cartList();
+    totalAmount();
+    cartItems();
 }
 
-/* final cart list added in the form of table which contains item name and price with number of quantity*/
-function cartList(){
+
+function cartItems(){
     var tableBody=  document.getElementById('table-body');
     tableBody.innerHTML= '';
 
@@ -512,7 +511,7 @@ function decrementItem(){
     cartItems()
 }
 
-function totalBill(){
+function totalAmount(){
     var sum=0;
     cartData.map(item=>{
         sum=sum+ item.price;
@@ -538,7 +537,7 @@ function cartToggle(){
         console.log(flag)
     }
     else{
-        alert("Currently there is no item in cart!");
+        alert("Currently no item in cart!");
     }
 }
 
